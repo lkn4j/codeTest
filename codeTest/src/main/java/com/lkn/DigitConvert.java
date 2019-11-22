@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author LKN
  *
  */
-public class TelephoneButtons {
+public class DigitConvert {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in).useDelimiter("\n");
 		String str = sc.next().toString();

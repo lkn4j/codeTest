@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 import org.junit.Test;
 
-import com.lkn.TelephoneButtons;
+import com.lkn.DigitConvert;
 /**
  * 测试类
  * @author LKN
  *
  */
-public class TBTest {
+public class DigitConvertTest {
 
 	@Test
 	public void testDigitMapping() {
@@ -28,10 +28,10 @@ public class TBTest {
 			for (int i = 0; i < l.length; i++) { 
 				l[i] = Integer.parseInt(arr[i]);
 			}
-			 assertTrue((TelephoneButtons.digitMapping(l).compareTo("ad ae af bd be bf cd ce cf"))==0);
+			 assertTrue((DigitConvert.digitMapping(l).compareTo("ad ae af bd be bf cd ce cf"))==0);
 		}else if(str2.length()==1) {
 			int[] l = {Integer.parseInt(str2)};
-			assertTrue((TelephoneButtons.digitMapping(l).compareTo("w x y z"))==0);
+			assertTrue((DigitConvert.digitMapping(l).compareTo("w x y z"))==0);
 		}
 	}
 
